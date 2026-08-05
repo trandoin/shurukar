@@ -1,0 +1,128 @@
+{
+  "theme": "light",
+  "mood": "Warm, optimistic, energetic, trusted elder sibling (Didi) vibe. Not a government portal, but a modern Indian D2C/startup platform. Stripe's clarity + Notion's warmth.",
+  "typography": {
+    "headings": {
+      "font": "Poppins, sans-serif",
+      "weights": ["600", "700"],
+      "strategy": "Large, confident, tight tracking. Mixed Hindi-Latin text must look balanced and dignified."
+    },
+    "body": {
+      "font": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "strategy": "Clean, highly readable on mobile, relaxed line height."
+    },
+    "google_fonts_url": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+  },
+  "colors": {
+    "primary": {
+      "name": "Amber/Saffron Accent",
+      "hex": "#EA580C",
+      "tailwind": "orange-600",
+      "hover": "#C2410C",
+      "description": "Used for main CTAs, highlights, and energetic accents. Represents optimism and action."
+    },
+    "background": {
+      "main": "#FEF9F3",
+      "card": "#FFFFFF",
+      "dark_section": "#14213D",
+      "description": "Main background is a warm cream/off-white, not stark white. Cards are pure white for contrast."
+    },
+    "text": {
+      "primary": "#1A1A1A",
+      "secondary": "#4B5563",
+      "on_dark": "#FFFFFF",
+      "on_primary": "#FFFFFF"
+    },
+    "accents": {
+      "border": "rgba(234, 88, 12, 0.15)",
+      "blob": "rgba(234, 88, 12, 0.05)"
+    }
+  },
+  "visual_enhancers": {
+    "shadows": "Soft, diffuse shadows for depth without harshness. E.g., `shadow-[0_8px_30px_rgb(0,0,0,0.04)]`.",
+    "borders": "Thin, warm-tinted borders `border-[#EA580C]/15` to define cards against the cream background.",
+    "radii": "Generous rounded corners. Cards: `rounded-2xl` or `rounded-3xl`. Chips: `rounded-full`.",
+    "glassmorphism": "Used strictly for the sticky top navigation and mobile bottom CTA bar (`bg-white/80 backdrop-blur-md`).",
+    "blobs": "Subtle, blurred, organic SVG blobs in the background using the primary amber color at very low opacity (5-10%) to break up solid backgrounds."
+  },
+  "layouts": {
+    "spacing": "Generous padding. Use `py-20` to `py-32` for sections on desktop, `py-16` on mobile.",
+    "grid": "Bento-style grids for 'What You Get' section. Asymmetric layouts to avoid the 'government form' look.",
+    "mobile_first": "Ensure all interactive elements have large tap targets. A sticky CTA at the bottom of the screen on mobile is REQUIRED after the hero section."
+  },
+  "motion": {
+    "scroll_animations": "Use `framer-motion` for subtle fade-up and slide-up animations on section entry.",
+    "hero": "Floating phone mockup using a slow, repeating vertical translation (`y: [0, -10, 0]`) in framer-motion.",
+    "counters": "Animated number counters using `framer-motion` when scrolled into view.",
+    "ticker": "Continuous auto-scrolling marquee for the Live Dashboard using `react-fast-marquee` or pure CSS animation.",
+    "hover": "Cards lift slightly (`-translate-y-1`) with enhanced shadow. Buttons scale slightly (`scale-105`)."
+  },
+  "components_strategy": {
+    "marketing_sections": "Use raw HTML/Tailwind for expressive layout, overlapping elements, and specific spacings.",
+    "interactive_elements": "Use Shadcn components for complex logic (e.g., Select, Form) but strip any default Vercel/monochrome look. Re-style them with rounded corners, warm borders, and amber focus rings (`focus:ring-orange-500`).",
+    "chips": "Pill-shaped toggles/labels (`rounded-full px-4 py-2 bg-white border border-orange-100 text-gray-700 hover:border-orange-500 transition-colors`). Used heavily in the form and stats.",
+    "charts": "Use Recharts for the age-group breakdown in the Live Dashboard. Style it with warm amber/orange tones.",
+    "icons": "Use `lucide-react`. Ensure stroke width is consistent (typically 1.5 or 2)."
+  },
+  "specific_section_instructions": {
+    "nav": "Sticky glass header. Logo left, anchor links center (hidden on mobile), 'Apna Idea Submit Karein' CTA right.",
+    "hero": "Headline: 'Har business ek idea se shuru hota hai.' CTA 'Apna Idea Submit Karein' & 'Explore ShuruKar' ghost button. Right side: Floating phone mockup showing a chat UI with Hindi bubbles. Trust strip below.",
+    "why_shurukar": "2-col layout. Left: Headline & Pull-quote. Right: Icon list of 5 questions. Tagline: 'Sapna aapka. Safar humara saath.'",
+    "stats_row": "4 Stat chips (24x7, 7 din, Aapki Bhasha, Free) in a flex row, wrapping on mobile.",
+    "what_you_get": "5 feature cards in a Bento grid. Close with a full-width dark section with the statement: 'Yeh sirf app nahi hai. Yeh Bharat ka entrepreneurship movement hai.'",
+    "founder_movement": "Editorial photo mask (organic shape). Pull-quote. Horizontally scrollable city chips.",
+    "bharat_project_safar": "4 animated stat counters + vertical or horizontal mini-timeline with glowing 'You are here' indicator for 'ShuruKar AI Co-Pilot'.",
+    "live_dashboard": "Cards row with animated counters (Total Ideas, Cities, Today). Age-group Rechart (bar or donut). Auto-scrolling ticker of recent submissions.",
+    "submission_form": "Startup onboarding style card. Fields: Name, Mobile, Email, City, Age Group (Chips), Idea (Textarea with rotating placeholder), Stage (Chips). Success state replaces form with confetti and share buttons."
+  },
+  "image_urls": {
+    "ambient_gradients": [
+      {
+        "url": "https://images.unsplash.com/photo-1650803318792-6781b4884a20?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMHdhcm0lMjBvcmFuZ2UlMjBhbWJlciUyMGdyYWRpZW50fGVufDB8fHx8MTc4NTk0OTc3Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Warm orange/red gradient for abstract background blobs."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1557682260-96773eb01377?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMHdhcm0lMjBvcmFuZ2UlMjBhbWJlciUyMGdyYWRpZW50fGVufDB8fHx8MTc4NTk0OTc3Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Bright orange to dark red gradient for hero or dark section accents."
+      }
+    ],
+    "founder_placeholder": [
+      {
+        "url": "https://images.unsplash.com/photo-1623662346414-af98877cab19?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHw0fHxzbWlsaW5nJTIwY29uZmlkZW50JTIwaW5kaWFuJTIwZW50cmVwcmVuZXVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg1OTQ5NzcwfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Confident entrepreneur portrait (to be replaced with actual Shradha Sharma photo later)."
+      }
+    ]
+  },
+  "dependencies": [
+    "framer-motion",
+    "lucide-react",
+    "recharts",
+    "react-fast-marquee",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "accessibility": {
+    "contrast": "Ensure amber text on cream background passes WCAG AA. Use #C2410C for text, #EA580C for large buttons.",
+    "interactive": "Include `data-testid` on all buttons, form inputs, and key sections.",
+    "focus": "Clear focus rings on form fields, tinted orange."
+  },
+  "instructions_to_main_agent": [
+    "Start by setting up the Tailwind configuration with the custom colors (#EA580C, #14213D, #FEF9F3) and fonts (Poppins, Inter).",
+    "Apply `bg-[#FEF9F3]` to the main body to ensure the warm cream background is consistent.",
+    "Build the page as a single, scrolling landing page (`App.js`) divided into semantic `<section>` blocks with IDs for anchor scrolling.",
+    "Implement the 'Mobile Bottom Sticky CTA'. It should appear only on mobile breakpoints (`md:hidden`) and stick to the bottom of the viewport using `fixed bottom-0 w-full z-50`.",
+    "For the Hero section, construct a CSS/Tailwind-based 'phone mockup' (a rounded-3xl div with a border and shadow) containing a mockup chat UI with Hindi text bubbles.",
+    "For the Submission Form, use an interactive state `isSubmitted` to swap the form view with the success/confetti view.",
+    "Ensure the Hindi text is visually prominent and elegantly mixed with English (Hinglish). Use Poppins for these headings.",
+    "Use `framer-motion` to wrap sections in `<motion.div>` for `initial={{ opacity: 0, y: 20 }}` and `whileInView={{ opacity: 1, y: 0 }}`."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do not converge toward generic outputs. Use the specified warm color palette and bold typography.",
+    "Do not center-align paragraphs; keep them left-aligned for natural reading. Center alignment is only for hero titles or section headers.",
+    "Add transitions to buttons (e.g., `transition-all duration-300 hover:scale-105 hover:shadow-lg`). Do not use `transition: all` globally.",
+    "Add `data-testid` attributes to all actionable items and major sections.",
+    "Use pill-shaped buttons (`rounded-full`) for CTAs to match the D2C startup vibe.",
+    "Incorporate generous spacing (`py-24` desktop, `py-16` mobile) between sections."
+  ]
+}
