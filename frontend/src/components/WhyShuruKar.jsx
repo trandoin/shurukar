@@ -77,7 +77,7 @@ export const WhyShuruKar = () => (
         </Reveal>
         <Reveal delay={0.08}>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-relaxed text-charcoal/65 md:text-base">
-            ShuruKar AI Co-Pilot har entrepreneur ko personalized guidance deta hai — 24 ghante, 7 din,
+            ShuruKar AI Co-Pilot har entrepreneur ko personalized guidance deta hai - 24 ghante, 7 din,
             aapki language mein, aapke business ke context ke saath.
           </p>
         </Reveal>
