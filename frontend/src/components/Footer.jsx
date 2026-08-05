@@ -1,8 +1,8 @@
 import { Instagram, Linkedin, Youtube, Twitter, ArrowRight } from "lucide-react";
-import { ASSETS } from "@/lib/brand";
+import { ASSETS, SOCIALS } from "@/lib/brand";
 import { CTAButton, Reveal, scrollToId } from "@/components/shared";
 
-const socials = [Twitter, Instagram, Youtube, Linkedin];
+const ICONS = { X: Twitter, Instagram, YouTube: Youtube, LinkedIn: Linkedin };
 
 export const Footer = () => (
   <>
@@ -65,17 +65,22 @@ export const Footer = () => (
           <div>
             <p className="font-display text-sm font-semibold text-charcoal">Follow</p>
             <div className="mt-4 flex gap-2.5">
-              {socials.map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  data-testid={`social-link-${i}`}
-                  aria-label="Social link"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-charcoal/10 bg-white text-charcoal/60 transition-[color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-saffron-600 hover:text-saffron-700"
-                >
-                  <Icon size={17} strokeWidth={1.8} />
-                </a>
-              ))}
+              {SOCIALS.map((s) => {
+                const Icon = ICONS[s.name];
+                return (
+                  <a
+                    key={s.name}
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    data-testid={`social-link-${s.name}`}
+                    aria-label={`The Bharat Project on ${s.name}`}
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-charcoal/10 bg-white text-charcoal/60 transition-[color,border-color,transform] duration-300 hover:-translate-y-0.5 hover:border-saffron-600 hover:text-saffron-700"
+                  >
+                    <Icon size={17} strokeWidth={1.8} />
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>

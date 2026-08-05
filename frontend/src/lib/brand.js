@@ -4,10 +4,16 @@ export const ASSETS = {
   bharatProjectLogo: "/bharat-project-logo.png",
   launchPhoto:
     "https://customer-assets-jt897jd0.emergentagent.net/job_d15035d4-aae7-4ff6-97b1-85c99880badb/artifacts/izgizbo6_Bharat%20project%20launch.webp",
-  // PLACEHOLDER: swap with Shradha Sharma's official portrait
   founderPortrait:
-    "https://static.prod-images.emergentagent.com/jobs/d15035d4-aae7-4ff6-97b1-85c99880badb/images/63773df669e5d16af291377aa178a9a86bb37677826db2bed82ce803d66b7d5d.jpeg",
+    "https://customer-assets-rejwkqb3.emergentagent.net/job_nidar-shuru/artifacts/srx6yiec_shradha.jpg",
 };
+
+export const SOCIALS = [
+  { name: "X", url: "https://x.com/BharatProjectCo" },
+  { name: "Instagram", url: "https://www.instagram.com/thebharatproject_" },
+  { name: "YouTube", url: "https://www.youtube.com/c/thebharatproject" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/company/thebharatproject" },
+];
 
 export const NAV_LINKS = [
   { href: "#why", label: "Why ShuruKar" },

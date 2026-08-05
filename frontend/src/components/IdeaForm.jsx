@@ -212,7 +212,7 @@ export const IdeaForm = () => {
                     </a>
                     <a
                       data-testid="share-instagram"
-                      href="https://instagram.com"
+                      href="https://www.instagram.com/thebharatproject_"
                       target="_blank" rel="noreferrer"
                       className="rounded-full border border-charcoal/12 px-5 py-2.5 text-sm font-medium text-charcoal/70 transition-colors hover:border-pink-500 hover:text-pink-600"
                     >

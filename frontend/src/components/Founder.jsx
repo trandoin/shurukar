@@ -9,7 +9,7 @@ export const Founder = () => (
         <SectionLabel>The Movement</SectionLabel>
       </Reveal>
 
-      <div className="mt-10 grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+      <div className="mt-10 grid gap-12 lg:grid-cols-[minmax(320px,380px)_1fr] lg:gap-16">
         <Reveal className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="absolute -left-6 -top-6 h-40 w-40 rounded-full bg-saffron-400/35 blur-2xl" />
           <div className="absolute -bottom-8 right-0 h-48 w-48 rounded-[40%_60%_55%_45%] bg-saffron-600/20 blur-2xl" />
@@ -17,14 +17,11 @@ export const Founder = () => (
             src={ASSETS.founderPortrait}
             alt="Shradha Sharma, Founder, The Bharat Project"
             loading="lazy"
-            className="relative w-full rounded-[36px_36px_36px_120px] object-cover shadow-[0_36px_70px_-30px_rgba(20,33,61,0.45)]"
+            className="relative aspect-[4/5] w-full rounded-[36px_36px_36px_120px] object-cover object-top shadow-[0_36px_70px_-30px_rgba(20,33,61,0.45)]"
           />
           <div className="relative mt-5 rounded-2xl border border-saffron-600/15 bg-white px-5 py-4">
             <p className="font-display text-base font-semibold text-charcoal">Shradha Sharma</p>
             <p className="mt-0.5 text-xs text-charcoal/55">Founder, The Bharat Project &middot; Founder, YourStory</p>
-            <p className="mt-2 text-[11px] italic text-charcoal/40">
-              Placeholder photo — official portrait se replace karna hai
-            </p>
           </div>
         </Reveal>
 

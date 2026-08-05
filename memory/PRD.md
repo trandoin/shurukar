@@ -63,14 +63,20 @@ Deployment target: **shurukar.in**.
 - Verified end-to-end by the testing agent: 12/12 backend cases, all frontend flows, 100% pass.
 
 ## Placeholders to swap
-- Shradha Sharma's official portrait (`/app/frontend/src/lib/brand.js` → `founderPortrait`).
 - Final 1200×630 OG share image (`/app/frontend/public/index.html`).
-- Real social profile URLs and Privacy/Terms/Contact pages (currently `#`).
+- Privacy/Terms/Contact pages (currently `#`).
 - Phone-mockup screens → actual app screenshots at launch.
+
+## Done in follow-up (June 2026)
+- Resend API key wired; confirmation email sends on submit when an email is provided.
+- Real Shradha Sharma photo added to the Founder section (and column width fixed).
+- Real social URLs wired in the footer (X / Instagram / YouTube / LinkedIn) and in the
+  success-state Instagram share.
 
 ## Backlog
 **P0**
-- Add `RESEND_API_KEY` so confirmation emails actually send.
+- Verify `shurukar.in` domain in Resend and switch `SENDER_EMAIL` off `onboarding@resend.dev`
+  (current sender has a ~1/day quota and only delivers to the account owner).
 - Protect `GET /api/admin/export.csv` with an admin token (currently open).
 - Rate-limit / basic bot protection on `POST /api/submit-idea`.
 
