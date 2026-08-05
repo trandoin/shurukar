@@ -44,7 +44,7 @@ export const Hero = () => (
 
         <Reveal delay={0.18}>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-charcoal/60 md:text-base">
-            ShuruKar aapka 24×7 AI mentor hai — business shuru karne se lekar use bada karne tak, har
+            ShuruKar aapka 24×7 AI mentor hai - business shuru karne se lekar use bada karne tak, har
             step par aapke saath. Aapki bhasha mein. Bilkul free.
           </p>
         </Reveal>
