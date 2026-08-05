@@ -25,9 +25,9 @@ export const Hero = () => (
         </Reveal>
 
         <Reveal delay={0.06}>
-          <h1 className="mt-6 font-display text-4xl font-bold leading-[1.08] tracking-tight text-charcoal sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 font-display text-3xl font-bold leading-[1.08] tracking-tight text-charcoal sm:text-4xl lg:text-5xl">
             Har business ek idea se{" "}
-            <span className="relative inline-block text-saffron-700">
+            <span className="relative inline-block text-saffron-700 text-[0.85em]">
               shuru hota hai.
               <svg className="absolute -bottom-2 left-0 w-full" height="10" viewBox="0 0 200 10" preserveAspectRatio="none">
                 <path d="M2 7C50 2 150 2 198 6" stroke="#EA580C" strokeWidth="3" fill="none" strokeLinecap="round" opacity="0.45" />
@@ -44,18 +44,15 @@ export const Hero = () => (
 
         <Reveal delay={0.18}>
           <p className="mt-4 max-w-xl text-sm leading-relaxed text-charcoal/60 md:text-base">
-            ShuruKar aapka 24×7 AI mentor hai — business shuru karne se lekar use bada karne tak, har
+            ShuruKar aapka 24×7 AI mentor hai - business shuru karne se lekar use bada karne tak, har
             step par aapke saath. Aapki bhasha mein. Bilkul free.
           </p>
         </Reveal>
 
         <Reveal delay={0.24}>
-          <div className="mt-9 flex flex-wrap items-center gap-3">
-            <CTAButton testId="hero-cta-primary" onClick={() => scrollToId("#submit")}>
+          <div className="mt-8 flex items-center">
+            <CTAButton testId="hero-cta-primary" onClick={() => scrollToId("#submit")} className="w-full sm:w-auto">
               Apna Idea Submit Karein <ArrowRight size={17} />
-            </CTAButton>
-            <CTAButton testId="hero-cta-secondary" variant="ghost" onClick={() => scrollToId("#why")}>
-              Explore ShuruKar
             </CTAButton>
           </div>
         </Reveal>
@@ -133,9 +130,6 @@ export const Hero = () => (
             </div>
           </div>
         </motion.div>
-        <p className="mt-4 text-center text-[11px] italic text-charcoal/40">
-          Placeholder UI — actual app screens launch par
-        </p>
       </Reveal>
     </div>
   </section>

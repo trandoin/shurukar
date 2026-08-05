@@ -91,11 +91,7 @@ export const BharatSafar = () => (
               >
                 {m.what}
               </p>
-              {m.current && (
-                <p className="mt-3 inline-block rounded-full bg-white/20 px-3 py-1 text-[11px] font-semibold">
-                  Aap yahan hain
-                </p>
-              )}
+              {/* badge removed */}
             </div>
           </Reveal>
         ))}
