@@ -48,7 +48,7 @@ export const Footer = () => (
           <div>
             <p className="font-display text-sm font-semibold text-charcoal">Company</p>
             <ul className="mt-4 space-y-2.5 text-sm text-charcoal/55">
-              <li><a href="#movement" className="transition-colors hover:text-saffron-700">The Bharat Project</a></li>
+              <li><a href="https://thebharatproject.co.in/" className="transition-colors hover:text-saffron-700">The Bharat Project</a></li>
               <li><a href="https://yourstory.com" target="_blank" rel="noreferrer" className="transition-colors hover:text-saffron-700">YourStory</a></li>
             </ul>
           </div>
