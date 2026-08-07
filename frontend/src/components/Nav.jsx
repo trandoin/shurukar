@@ -28,7 +28,15 @@ export const Nav = () => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3.5 md:px-8">
         <button data-testid="nav-logo" onClick={() => scrollToId("#hero")} className="shrink-0">
-          <img src={ASSETS.shuruKarLogo} alt="ShuruKar by YourStory" className="h-9 w-auto md:h-10" />
+          <img
+            src={ASSETS.shuruKarLogo}
+            alt="ShuruKar by YourStory"
+            width="160"
+            height="40"
+            decoding="async"
+            fetchpriority="high"
+            className="h-9 w-auto md:h-10"
+          />
         </button>
 
         <nav className="hidden items-center gap-1 lg:flex">

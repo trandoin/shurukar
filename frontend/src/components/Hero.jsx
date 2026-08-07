@@ -65,8 +65,10 @@ export const Hero = () => (
             <img
               src={ASSETS.bharatProjectLogo}
               alt="The Bharat Project"
+              width="160"
+              height="40"
+              decoding="async"
               className="h-10 w-auto"
-              loading="lazy"
             />
           </div>
         </Reveal>
